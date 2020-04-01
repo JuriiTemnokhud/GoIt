@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-fluid{
+    background-image: url("../images/Rectangle1.jpg");
+    background-size: cover;
+    min-height: 810px; 
+    height: 100%;  
+}
+
+  /* Header */
+
+.row_header{
+    padding-top: 40px;
+}
+
+  /* Nav */
+.nav>button{
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.2;
+    background-color: unset;
+    width: 90px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+}
+
+.nav{
+    margin-top: 20px;
+}
+
+.nav>button:focus{
+    border-radius: 20px;
+    border: 3px white solid;
+}
+
+  /* Title */
+.subtitle{
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.title {
+    padding-top: 50px;
+    font-size: 32px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.paragraf {
+    padding-top: 26px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+  /* Button */
+.button_header{
+    margin-top: 26px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    height: 42px;
+    width: 100%;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 20px;
+}
+
+    /* Section */
+.title_section {
+    margin-top: 70px; 
+    margin-bottom: 40px; 
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+  /* Card-section */
+.col_block{
+  margin-top: 30px;
+}
+
+.col_block>h5 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+}
+  
+.block_section{
+    height: 150px;
+    position: relative;   
+} 
+  
+.img_section{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+   
+  
+.img_inner{
+    position: absolute;
+    left: 57%;
+    top: 83px;
+}
+  
+    
+.img_section_inner{
+    position: absolute;
+    left: 61%;
+    top: 93px;
+} 
+    
+.p_section{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+
+  /* Button */
+.button_footer{
+    margin: 30px 0 60px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    background-color: unset;
+    border: 3px rgb(255, 78, 80) solid;
+    height: 42px;
+    border-radius: 20px;
+}
+
+  
+  @media screen and (min-width: 767.98px) {
+    .container-fluid{
+        background-image: url("../images/Tablet.jpg"); 
+    } 
+    .container{
+      max-width: 492px;
+    }
+    .title {
+      font-size: 52px;
+    } 
+    .paragraf {
+      font-size: 24px;
+    }   
+  }
+  
+ 
+  @media  screen and (min-width: 991.98px) {
+    .container-fluid{
+        background-image: url("../images/work-09.jpg");
+    } 
+    .container{
+      max-width: 942px;
+    }     
+  }
