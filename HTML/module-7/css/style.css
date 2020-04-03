@@ -10,35 +10,40 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("woff");
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Regular.ttf") format("woff2");
 } 
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("woff");
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Bold.ttf") format("woff2");
 }
 
 @font-face {
     font-family: "Parisienne, regular";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/Parisienne-Regular.ttf") format("woff");
+    src: url("../fonts/Parisienne-Regular.ttf") format("woff"),
+    url("../fonts/Parisienne-Regular.ttf") format("woff2");
 }
 
 @font-face {
     font-family: "Droid, serif";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/droid-serif.italic.ttf") format("woff");
+    src: url("../fonts/droid-serif.italic.ttf") format("woff"),
+    url("../fonts/droid-serif.italic.ttf") format("woff2");
 }
 
 @font-face {
     font-family: "RobotoSlab";
     font-style: normal;
     font-weight: 400;
-    src: url("/../fonts/RobotoSlab-VariableFont_wght.ttf") format("woff");
+    src: url("/../fonts/RobotoSlab-VariableFont_wght.ttf") format("woff"),
+    url("/../fonts/RobotoSlab-VariableFont_wght.ttf") format("woff2");
 }
 
     /* Header */
@@ -56,7 +61,7 @@
     text-shadow: 0 0 2px #fee694;
 } 
 
-.header_inner {
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -64,7 +69,7 @@
 }
 
     /* Header-nav */
-.nav_header a {
+.nav-header a {
     font-size: 14px;
     font-family: "Montserrat";
     color: #222222;
@@ -76,14 +81,14 @@
     padding-left: 40px;
 }
 
-.nav_header a:hover{
+.nav-header a:hover{
     color: #fed136;
     transition: 200ms linear;
     text-shadow: 0 0 2px #fee694;
 }
     
     /* Title-header */
-.title_header{
+.title-header{
     font-size: 40px;
     font-family: "Montserrat";
     color: rgb(34, 34, 34);
@@ -94,7 +99,7 @@
     padding-top: 120px;
 }
 
-.subtitle_header {
+.p-header {
     font-size: 18px;
     font-family: "DroidSerif";
     color: rgb(119, 119, 119);
@@ -110,13 +115,13 @@
     padding: 80px 0 120px;
 }
 
-.section_block{
+.section-block{
     width: 290px;
     position: relative;
 }
 
     /* icon-section */
-.icon_inner{
+.icon-inner{
     position: absolute;
     top: 37px;
     left: 50%;
@@ -132,7 +137,7 @@
 }
 
     /* Title-section */
-.title_section {
+.title-section {
     font-size: 18px;
     font-family: "Montserrat";
     color: rgb(34, 34, 34);
@@ -165,7 +170,7 @@ footer{
     transform: translateX(-50%);
 }
 
-.footer_inner{
+.footer-inner{
     background-image: url("../images/MapImage.png");
     width: 614px;
     height: 537px;
@@ -173,7 +178,7 @@ footer{
 }
 
 
-.title_footer{
+.title-footer{
     font-size: 40px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
@@ -184,7 +189,7 @@ footer{
     padding-top: 130px;
 }
 
-.subtitle_footer{
+.p-footer{
     font-size: 18px;
     font-family: "DroidSerif";
     color: rgb(119, 119, 119);
