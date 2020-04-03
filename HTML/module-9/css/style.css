@@ -81,12 +81,11 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     height: 42px;
-    width: 100%;
     line-height: 1.2;
     text-align: center;
     background-color: #ff4e50;
     border: none;
-    border-radius: 20px;
+    border-radius: 21px;
 }
 
     /* Section */
@@ -125,20 +124,35 @@
     left: 50%;
     transform: translateX(-50%);
 }
-   
-  
+
 .img_inner{
-    position: absolute;
-    left: 57%;
-    top: 83px;
+  height: 41px;
+  width: 41px; 
+  border: 4px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 55%;
+  top: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
-    
-.img_section_inner{
-    position: absolute;
-    left: 61%;
-    top: 93px;
-} 
+ 
+.bg-color1{
+  background-color: rgb(255, 78, 80);
+}
+
+.bg-color2{
+  background-color: rgb(28, 215, 173);
+}
+
+.bg-color3{
+  background-color: rgb(255, 165, 7);
+}
+
+.bg-color4{
+  background-color: rgb(78, 115, 219);
+}
     
 .p_section{
     margin-top: 20px;
@@ -182,7 +196,7 @@
   }
   
  
-  @media  screen and (min-width: 991.98px) {
+  @media screen and (min-width: 991.98px) {
     .container-fluid{
         background-image: url("../images/work-09.jpg");
     } 
