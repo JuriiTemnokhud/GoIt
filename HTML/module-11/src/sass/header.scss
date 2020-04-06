@@ -43,7 +43,7 @@
         font-weight: bold;
         text-align: left;
         text-decoration: none;
-        color: $color-whith;
+        color: $color-white;
         &:hover {
             color: $color-yellow;
             transition: 200ms linear;
@@ -56,7 +56,7 @@
     display: inline-block;
     font-size: 14px;
     font-family: "Montserrat";
-    color: $color-whith;
+    color: $color-white;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -101,7 +101,7 @@
         margin-top: 50px;
         font-size: 150px;
         font-family: $font-Montserrat;
-        color: $color-whith;
+        color: $color-white;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -110,7 +110,7 @@
     &__subtitle {
         font-size: 72px;
         font-family: $font-Kaushan;
-        color: $color-whith;
+        color: $color-white;
         text-align: center;
         line-height: 1.2;
     }
@@ -121,10 +121,10 @@
     height: 40px;
     width: 160px;
     background-color: unset;
-    border: 3px $color-whith solid;
+    border: 3px $color-white solid;
     font-size: 15px;
     font-family: "Montserrat";
-    color: $color-whith;
+    color: $color-white;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;

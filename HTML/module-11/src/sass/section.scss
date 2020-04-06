@@ -1,38 +1,32 @@
 
 /* Caption */
-.caption__title {
-    font-size: 30px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
+.caption{
     text-align: center;
-}
+    &__title {
+        font-size: 30px;
+        font-family: $font-Montserrat;
+        color: $color-dark;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
 
-.caption__subtitle {
-    font-size: 24px;
-    font-family: 'Kaushan Script';
-    color: rgb(51, 51, 51);
-    line-height: 2.2;
-    text-align: center;
-}
-
-.caption__title::after {
-    content: "";
-    display: block;
-    background-color: rgb(243, 129, 129);
-    width: 60px;
-    height: 3px;
-    margin: 0 auto;
-    margin-top: 36px;
-}
-
-.caption__text {
-    padding-top: 50px;
-    width: 960px;
-    margin: 0 auto;
-    text-align: center;
+    }
+    &__title::after {
+        content: "";
+        display: block;
+        background-color: $color-coral;     
+        width: 60px;
+        height: 3px;   
+        margin: 0 auto;
+        margin-top: 36px;
+    }
+    
+    &__subtitle {
+        font-size: 24px;
+        font-family: 'Kaushan Script';
+        color: $color-dark;
+        line-height: 2.2;    
+    }
 }
 
 /* List */
@@ -40,33 +34,43 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    .list-item {
+        width: 350px;
+        position: relative;
+        padding-left: 60px;
+        margin: 70px 0 30px;
+        &__icon {
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &__icon:hover {
+                fill: $color-coral;
+            }
+        }
+        &__title {
+            font-size: 14px;
+            font-family: $font-Montserrat;
+            font-weight: bold;
+            color: $color-dark;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 15px;
+            font-family: $font-Roboto;
+            color: $color-grey;
+            line-height: 1.6;
+            text-align: left;   
+        }
+    } 
 }
 
-.list-item {
-    width: 350px;
-    position: relative;
-    padding-left: 60px;
-    margin: 70px 0 30px;
-}
 
-.list-item__icon {
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.list-item__icon:hover {
-    fill: rgb(243, 129, 129);
-}
 
-.list-item__title {
-    font-size: 14px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: rgb(51, 51, 51);
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+
+
+
