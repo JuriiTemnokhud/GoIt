@@ -1,34 +1,4 @@
 
-/* Caption */
-.caption{
-    text-align: center;
-    &__title {
-        font-size: 30px;
-        font-family: $font-Montserrat;
-        color: $color-dark;
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
-
-    }
-    &__title::after {
-        content: "";
-        display: block;
-        background-color: $color-coral;     
-        width: 60px;
-        height: 3px;   
-        margin: 0 auto;
-        margin-top: 36px;
-    }
-    
-    &__subtitle {
-        font-size: 24px;
-        font-family: 'Kaushan Script';
-        color: $color-dark;
-        line-height: 2.2;    
-    }
-}
-
 /* List */
 .list-wrap {
     display: flex;

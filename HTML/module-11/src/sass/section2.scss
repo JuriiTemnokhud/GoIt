@@ -9,28 +9,24 @@
     width: 380px;
     height: 470px;     
     position: relative;
-    background-color: #95e1d3;
+    background-color: $color-turquoise;
+    &:hover .content-img img{
+        opacity: 0.1;   
+    }
+    &:hover .content-img {
+        transform: translateX(-10px)translateY(-10px)
+    }
+    &:hover .content-link {
+        opacity: 1;
+    }
 }
 
-.content-item:hover .content-img img{
-    opacity: 0.1;   
-}
-
-.content-img {
+.content-img {      
     transition: transform 200ms linear;
-    background: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);   
-}
-
-.content-img__image {
-    display: block;
-}
-
-.content-item:hover .content-img {
-    transform: translateX(-10px)translateY(-10px)
-}
-
-.content-item:hover .content-link {
-   opacity: 1;
+    background: $color-gradient-coral;
+    &__image {
+        display: block;
+    }       
 }
 
 /* Social links */
@@ -40,12 +36,12 @@
 }
 
 .social-link:hover .social-link__cls-1 {
-    fill: white;
+    fill: $color-white;
 }
 
 .social-link {
-   border-right: 1px solid #f9bd87;
-   background-color: #fce38a;
+   border-right: 1px solid $color-coral;
+   background-color: $color-yellow;
    display: block;
    height: 56px;
    width: 56px;
@@ -56,7 +52,7 @@
 }
 
 .social-link:hover {
-   background-color: #95e1d3;
+   background-color: $color-turquoise;
    transition: 200ms linear;
 }
 
@@ -71,17 +67,15 @@
 /* card info */
 .card-info__name {
    font-size: 14px;
-   font-family: "Montserrat";
-   color: rgb(51, 51, 51);
+   font-family: $font-Montserrat;
+   line-height: 1.2; 
+   color: $color-dark;
    text-transform: uppercase;
-   line-height: 1.2;
    text-align: center;
-   padding-top: 30px;
 }
 
 .card-info__text {
-   color: rgb(153, 153, 153);
+   color: $color-grey;
    font-style: italic;
-   line-height: 2.2;
    text-align: center;
 }
