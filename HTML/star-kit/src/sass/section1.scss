@@ -1,0 +1,46 @@
+
+/* List */
+.list-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .list-item {
+        width: 350px;
+        position: relative;
+        padding-left: 60px;
+        margin: 70px 0 30px;
+        &__icon {
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &__icon:hover {
+                fill: $color-coral;
+            }
+        }
+        &__title {
+            font-size: 14px;
+            font-family: $font-Montserrat;
+            font-weight: bold;
+            color: $color-dark;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 15px;
+            font-family: $font-Roboto;
+            color: $color-grey;
+            line-height: 1.6;
+            text-align: left;   
+        }
+    } 
+}
+
+
+
+
+
+
+
