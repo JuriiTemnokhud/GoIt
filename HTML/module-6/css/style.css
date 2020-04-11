@@ -160,42 +160,41 @@ body {
   
     /* cards */
 
- .content {
+.content {
      margin-top: 80px;
      display: flex;
      justify-content: space-between;
  }
  
- .content-item {
+.content-item {
      width: 380px;
      height: 470px;     
      position: relative;
      background-color: rgb(149, 225, 211);
  }
 
- .content-item:hover .content_img img{
+.content-item:hover .content-img img{
      opacity: 0.1;   
  }
 
- .content-img {
+.content-img {
      transition: transform 200ms linear;
      background: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%); 
-    
  }
 
- img {
+img {
      display: block;
  }
 
- .content-item:hover .content-img {
-     transform: translateX(-10px)translateY(-10px)
+.content-item:hover .content-img {
+     transform: translateX(-10px)translateY(-10px);
  }
 
- .content-item:hover .content-link {
+.content-item:hover .content-link {
     opacity: 1;
  }
 
- .social {
+.social {
      display: flex;
      justify-content: center;
  }
@@ -213,7 +212,7 @@ body {
     transition: 200ms linear;
 }
 
- .content-link {
+.content-link {
      width: 100%;
      position: absolute;
      top: 50%;
@@ -222,7 +221,7 @@ body {
  }
 
     /* card info */
- .card-name {
+.card-name {
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
