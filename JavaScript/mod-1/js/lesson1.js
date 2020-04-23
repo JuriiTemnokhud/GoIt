@@ -49,16 +49,16 @@ console.log(typeof SKY_COLOR);
 // =========================================================
 // Получение данных
 // =========================================================
-// const isComing = confirm('Please confirm hotel reservation'); // Ok <-- true
-// console.log('Hotel is confirmed:', isComing);
+const isComing = confirm('Please confirm hotel reservation'); // Ok <-- true
+console.log('Hotel is confirmed:', isComing);
 
-// const userName = prompt('Please enter your name');
-// console.log('Hello', userName);
+const userName = prompt('Please enter your name');
+console.log('Hello', userName);
 
-// const userAge = prompt('Please enter your age');
-// console.log('Age', Number(userAge));
+const userAge = prompt('Please enter your age');
+console.log('Age', Number(userAge));
 
-// console.log('Type of:', typeof userName);
+console.log('Type of:', typeof userName);
 
 // ====================================
 // Шаблонные строки и интерполяция
