@@ -92,17 +92,17 @@ const guest = null;
 
 // TODO        undefined
 // Еще одно специальное значение. По умолчанию, когда переменная объявляется, но не инициализируется, ее значение не определено, ей присваивается undefined.
-let name;
-console.log(name); // undefined
+let name1 = radar;
+console.log(name1); // undefined
 
 // TODO       Оператор typeof
 // Для получения типа значения переменной, используется оператор typeof
 // undefined
-let a;
-console.log(typeof a); // "undefined"
+let aa;
+console.log(typeof aa); // "undefined"
 
 // null
-const b = null;
+const bb = null;
 console.log(typeof null); // "object"
 
 // Number
@@ -126,13 +126,13 @@ const message = 'JavaScript is awesome!';
  */
 console.log(message); // JavaScript is awesome!
 
-const name = 'Mango';
+const name2 = 'Mango';
 /*
  * Можно сначала указать какую-то произвольную строку,
  * к примеру описывающую переменную или дополняющую ее, после чего
  * поставить запятую и указать имя переменной
  */
-console.log('My name is: ', name); // My name is: Mango
+console.log('My name is: ', name2); // My name is: Mango
 
 /*
  * alert выводит модальное окно, текст которого соотсветствует значению
@@ -188,11 +188,11 @@ console.log(x / y); // 2
 console.log(x % y); // 0
 
 // Сложение с заменой (есть и для других операторов)
-let value = 5;
+let valueA = 5;
 
 // Аналогично записи value = value + 10;
 value += 10;
-console.log(value); // 15
+console.log(valueA); // 15
 
 // TODO       Операторы сравнения
 //Используются для сравнения значений. Результатом своего выполнения возвращают були, true или false.
@@ -204,18 +204,18 @@ console.log(value); // 15
 // a === b - строгое равенство
 // a !== b - строгое неравенство
 
-const x = 5;
-const y = 10;
+const f = 5;
+const r = 10;
 const z = 5;
 
-console.log('x > y:', x > y); // false
-console.log('x < y:', x < y); // true
-console.log('x < z:', x < z); // false
-console.log('x <= z:', x <= z); // true
-console.log('x === y:', x === y); // false
-console.log('x === z:', x === z); // true
-console.log('x !== y:', x !== y); // true
-console.log('x !== z:', x !== z); // false
+console.log('f > r:', f > r); // false
+console.log('f < r:', f < r); // truf
+console.log('f < z:', f < z); // false
+console.log('f <= z:', f <= z); // true
+console.log('f === r:', f === r); // false
+console.log('f === z:', f === z); // true
+console.log('f !== r:', f !== r); // true
+console.log('f !== z:', f !== z); // false
 
 // TODO        == и ===
 // Всегда используйте строгое равенство === и строгое неравенство !==. Операторы == и != выполняют преобразование типов сравниваемых значений, что может привести к ошибкам, особенно у начинающих
@@ -225,13 +225,13 @@ console.log('x !== z:', x !== z); // false
 
 // Если значние не возможно привести к числу, результатом будет специальное значение NaN (Not a Number). Аналогичным образом происходит преобразование и в других математических операторах и функциях.
 
-const valueA = '5';
+const valueB = '5';
 console.log(Number(valueA)); // 5
-console.log(typeof Number(valueA)); // 'number'
-
-const valueB = 'random string';
-console.log(Number(valueB)); // NaN
 console.log(typeof Number(valueB)); // 'number'
+
+const valueC = 'random string';
+console.log(Number(valueB)); // NaN
+console.log(typeof Number(valueC)); // 'number'
 
 // TODO    Number.parseInt() и Number.parseFloat()
 //Методы преобразуют строку символ за символом, пока это возможно. При возникновении ошибки возвращается число, которое получилось.
@@ -305,13 +305,13 @@ console.log(Math.random() * (10 - 1) + 1); // случайное число от
 
 // TODO   Строка
 //  — это индексированный набор из нуля или более символов, заключенных в одинарные либо двойные кавычки.
-const name = 'Mango';
+const nameB = 'Mango';
 // Важно помнить что индексация элементов строки начинается с нуля. К примеру в строке 'JavaScript' буква 'J' стоит на позиции с индексом 0, а 't' идет под индексом 9.
 
 // TODO   Конкатенация строк
 // Если применить оператор + к строке и любому другому типу данных, результатом операции «сложения» будет строка. Эта операция называется конкатенация, или сложение строк.
-const message = 'Mango ' + 'is' + ' happy';
-console.log(message); // Mango is happy
+const isMessage = 'Mango ' + 'is' + ' happy';
+console.log(isMessage); // Mango is happy
 
 // Теперь посмотрим на порядок операндов
 let result;
@@ -341,36 +341,36 @@ console.log(typeof result); // string
 // indexOf() - вернет позицию (индекс) на которой находится первое совпадение подстроки или -1, если ничего не найдено
 // includes() - один из наиболее часто используемых методов, в большинстве случаев заменяет indexOf, проверяет входит ли подстрока в строку, возвращает true или false
 
-const message = 'Welcome to Bahamas!';
+const isMessageA = 'Welcome to Bahamas!';
 
-console.log(message.length); // 19
+console.log(isMessageA.length); // 19
 console.log('There is nothing impossible to him who will try'.length); // 47
 
-console.log(message.toLowerCase()); // welcome to bahamas!
-console.log(message.toUpperCase()); // WELCOME TO BAHAMAS!
+console.log(isMessageA.toLowerCase()); // welcome to bahamas!
+console.log(isMessageA.toUpperCase()); // WELCOME TO BAHAMAS!
 
 // При этом исходная строка не изменяется
-console.log(message); // Welcome to Bahamas!
+console.log(isMessageA); // Welcome to Bahamas!
 
-console.log(message.indexOf('to')); // 8
-console.log(message.indexOf('hello')); // -1
+console.log(isMessageA.indexOf('to')); // 8
+console.log(isMessageA.indexOf('hello')); // -1
 
 // Все методы строк чувствительны к регистру
-console.log(message.includes('welcome')); // false
-console.log(message.includes('Welcome')); // true
+console.log(isMessageA.includes('welcome')); // false
+console.log(isMessageA.includes('Welcome')); // true
 
 // TODO   Шаблонные строки и интерполяция
 // Шаблонные строки это альтернатива конкатенации с более удобным синтаксисом. Они заключены в обратные кавычки вместо двойных или одинарных и могут содержать местозаполнители, которые обозначаются знаком доллара и фигурными скобками.
 
 // Используя переменные необходимо составить строку с подставленными значениями
-const name = 'Mango';
-const age = 2;
+const nameC = 'Mango';
+const ageParsing = 2;
 const mood = 'happy';
 
-const message =
+const messageN =
   'My name is ' + name + ", I'm " + age + ' years old and ' + mood + '.';
 
-console.log(message); // My name is Mango, I'm 2 years old and happy.
+console.log(messageN); // My name is Mango, I'm 2 years old and happy.
 
 /*
  * Составлять строки с подставляемыми значениями
@@ -393,15 +393,15 @@ console.log(`Результат сложения равен ${2 + 2}.`); // Ре
 //    Логическое «И»
 // Оператор && приводит все операнды к булю и возвращает одно из значений (операндов). Левый операнд если его можно привести к false, и правый в остальных случаях.
 const num = 20;
-const result = num > 10 && num < 30;
+const isResult = num > 10 && num < 30;
 console.log(result); // true
 // Для того чтобы оператор && вернул true, требуется чтобы все операнды были истинными (truthy). Если хотябы один из операндов будет приведен к false, то результатом выражения будет этот операнд.
 
 //    Логическое «ИЛИ»
 // Оператор || возвращает одно из значений (операндов). Левый операнд если его можно привести к true, и правый в остальных случаях.
-const num = 5;
-const result = num < 10 || num > 30;
-console.log(result); // true
+const num5 = 5;
+const result1 = num < 10 || num > 30;
+console.log(result1); // true
 // Это тоже будет true так как хотябы один из операндов был приведен к true.
 
 //    Логическое «НЕ»
@@ -415,10 +415,12 @@ console.log(!0); // true
 // При выполнении логических операций, правый операнд может не вычисляться.
 
 // "Купить билет И отдохнуть" - если левый операнд "Купить билет" окажется false, то вычислять второй нет смысла.
-false && (этот операнд не вычисляется)
+//  (этот операнд не вычисляется)
+false && 
 
 // "Отдохнуть ИЛИ сохранить деньги" - если левый операнд "Отдохнуть" окажется true, то вычислять второй нет смысла.
-true || (этот операнд не вычисляется)
+//  (этот операнд не вычисляется)
+ true ||
 
 
 // TODO    Операторы ветвеления
