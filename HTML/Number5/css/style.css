@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.box {
+  height: 7rem;
+  width: 30rem;
+  border: cornsilk 3px solid;
+  border-radius: 3.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 18rem;
+}
+
+h2 {
+  color: coral;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 5rem;
+}
